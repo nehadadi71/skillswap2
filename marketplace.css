@@ -1,0 +1,215 @@
+/* Reset & base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7fb;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.logo span {
+  color: #9f5cf7;
+}
+
+.navbar nav a {
+  margin: 0 1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.navbar nav a.active {
+  color: #9f5cf7;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.sign-in {
+  background: #9f5cf7;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #a685e2, #9f5cf7);
+  padding: 3rem 2rem;
+  color: white;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero-content .search-bar {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.hero-content input {
+  width: 60%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 8px;
+}
+
+.hero-content button {
+  padding: 0.7rem 1rem;
+  background: white;
+  color: #9f5cf7;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #9f5cf7;
+  border-radius: 20px;
+  background: white;
+  color: #9f5cf7;
+}
+
+.filter-btn.active {
+  background: #9f5cf7;
+  color: white;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Skill Card */
+.skill-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+ 
+
+.skill-content {
+  padding: 1rem;
+}
+
+.skill-content h3 {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 1.2rem;
+}
+
+.skill-content p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.skill-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+}
+
+.skill-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.tag {
+  background: #eee;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.btn-group button {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin: 0 5px;
+}
+
+.btn-group .view {
+  background: #e0e0e0;
+}
+
+.btn-group .request {
+  background: #9f5cf7;
+  color: white;
+}

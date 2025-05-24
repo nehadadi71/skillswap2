@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+header {
+  background: white;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.logo span {
+  color: #9f5cf7;
+}
+.navbar nav {
+  display: flex;
+  gap: 2rem;
+}
+.navbar nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  position: relative;
+}
+.navbar nav a.active,
+.navbar nav a:hover {
+  color: #9f5cf7;
+}
+.navbar nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #9f5cf7;
+  border-radius: 2px;
+}
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.auth-buttons .search-input {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+.auth-buttons .sign-in {
+  background: #9f5cf7;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6d28d9;
+  text-decoration: none;
+}
+
+nav .logo span {
+  color: #8b5cf6;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #7c3aed;
+}
+
+.testimonials {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials .subheading {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: left;
+}
+
+.icon {
+  color: #8b5cf6;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.avatar {
+  background: #8b5cf6;
+  color: white;
+  font-weight: bold;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  font-size: 0.85rem;
+  color: #4b5563;
+}

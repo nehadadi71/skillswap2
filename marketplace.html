@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillSwap Marketplace</title>
+  <link rel="stylesheet" href="../css/marketplace.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Skill<span>Swap</span></div>
+    <nav>
+  <a href="home.html">Home</a>
+  <a href="marketplace.html" class="active">Marketplace</a>
+  <a href="how.html">How It Works</a>
+  <a href="#">Blog</a>
+</nav>
+
+    <div class="auth-buttons">
+      <input type="text" placeholder="Search" class="search-input" />
+      <button class="sign-in">Sign In</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover & Exchange Skills</h1>
+      <p>Browse the marketplace to find skills you want to learn. Use your credits to connect with instructors and arrange skill swap sessions.</p>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for skills, topics, or instructors..." />
+        <button>Filter</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="programming">Programming</button>
+    <button class="filter-btn" data-category="design">Design</button>
+    <button class="filter-btn" data-category="business">Business</button>
+    <button class="filter-btn" data-category="marketing">Marketing</button>
+    <button class="filter-btn" data-category="language">Language</button>
+    <button class="filter-btn" data-category="music">Music</button>
+  </section>
+
+  <section class="skills-grid" id="skills-container">
+    <!-- Cards will be inserted here by JS -->
+  </section>
+
+  <script src="../js/marketplace.js"></script>
+</body>
+</html>
